@@ -88,8 +88,8 @@ Traditional digital beauty platforms are divided into two isolated silos:
 
 ### 1. Clone & Install
 ```bash
-git clone <repo-url>
-cd Hackathon11
+git clone https://github.com/Elroi-thecreator/auraskin-studio.git
+cd auraskin-studio
 npm install
 ```
 

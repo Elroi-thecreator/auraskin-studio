@@ -35,6 +35,7 @@ We created **AuraSkin Studio** to bridge this gap: connecting **YouCam AI Clinic
    - Formulates tailored AM and PM routines with bundled prescription pricing, discount application, and seamless cart checkout.
 
 ## 🛠️ How We Built It
+- **Code Repository:** https://github.com/Elroi-thecreator/auraskin-studio
 - **Frontend:** Next.js 14 (App Router), React 18, TypeScript, Tailwind CSS, Lucide icons.
 - **Backend / API Layer:** Next.js Serverless Route Handlers (\`/api/youcam/analyze\`, \`/api/youcam/vto\`, \`/api/youcam/templates\`) acting as a secure proxy to YouCam's S2S REST APIs (\`makeupar.com\`).
 - **Resilient Dual-Mode Architecture:** Seamlessly supports live YouCam API keys while bundling intelligent offline presets and telemetry so judges can evaluate the entire application with zero friction.
