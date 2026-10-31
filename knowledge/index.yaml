@@ -1,0 +1,36 @@
+version: 1.0.0
+last_updated: "2026-10-31"
+knowledge_units_count: 6
+
+domains:
+  architecture:
+    - id: ARCH-001
+      title: "AuraSkin Studio System Architecture & Dual-Mode YouCam Integration"
+      file: "units/ARCH-001.yaml"
+      status: "approved"
+    - id: ARCH-002
+      title: "End-to-End Diagnostic to VTO Data Pipeline & Routine Mapping"
+      file: "units/ARCH-002.yaml"
+      status: "approved"
+
+  development:
+    - id: DEV-001
+      title: "Next.js 14 App Router, TypeScript, and Styling Conventions"
+      file: "units/DEV-001.yaml"
+      status: "approved"
+
+  product:
+    - id: PROD-001
+      title: "Clinical Skin Diagnostics & Personalized eCommerce VTO User Journey"
+      file: "units/PROD-001.yaml"
+      status: "approved"
+    - id: PROD-002
+      title: "Predictive 4-Week Skin Progression & Active Ingredient Formulations"
+      file: "units/PROD-002.yaml"
+      status: "approved"
+
+  decision:
+    - id: ADR-001
+      title: "Architectural Decision: Server-Side Proxying with Fallback Presets for Hackathon Reliability"
+      file: "units/ADR-001.yaml"
+      status: "approved"

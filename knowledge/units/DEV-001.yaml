@@ -1,0 +1,18 @@
+id: DEV-001
+type: development
+title: Next.js 14 App Router, TypeScript, and Styling Conventions
+domain: development
+status: approved
+version: 1.0.0
+rule: "The frontend must use Next.js 14/15 App Router with TypeScript in strict mode, styled with Tailwind CSS and Lucide icons. Component states must be clear, reactive, and responsive across desktop and mobile."
+do:
+  - "Use TypeScript interfaces for all YouCam API request and response schemas."
+  - "Maintain modular component architecture: camera capture, diagnostic summary, heatmap mask viewer, VTO split-slider, routine recommendations, and shopping cart drawer."
+  - "Provide accessible, touch-friendly UI controls for sliders, camera selection, and tab navigation."
+dont:
+  - "Never use untyped 'any' for YouCam API task responses."
+  - "Avoid heavy external dependencies that increase build times or break client bundle hydrations."
+reason: "Ensures type safety, fast page loads, maintainable codebase, and a responsive experience for hackathon evaluators."
+related_items:
+  - "ARCH-001"
+  - "PROD-001"

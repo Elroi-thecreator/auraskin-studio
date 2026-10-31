@@ -1,0 +1,18 @@
+id: ARCH-002
+type: architecture
+title: End-to-End Diagnostic to VTO Data Pipeline & Routine Mapping
+domain: architecture
+status: approved
+version: 1.0.0
+rule: "The application pipeline flows sequentially through five distinct stages: Image Acquisition -> YouCam Skin Diagnostic -> Active Ingredient Mapping -> Virtual Try-On Render -> 4-Week Skin Progression Simulation & eCommerce Checkout."
+do:
+  - "Normalize YouCam API concern scores into standard 0-100 severity metrics."
+  - "Map clinical diagnostic flags (e.g., severe redness, moderate wrinkles) to active ingredients and paired corrective VTO presets."
+  - "Enable split-screen interactive before/after visual comparison between raw diagnosis and VTO transformation."
+dont:
+  - "Do not decouple skincare recommendations from the diagnosed metrics; all product suggestions must be directly grounded in detected concerns."
+  - "Do not render VTO looks without providing clear visual comparisons to the original selfie."
+reason: "The hackathon rewards complete customer journeys over isolated feature wrappers. Connecting diagnostic evidence to cosmetic try-on delivers the highest consumer value."
+related_items:
+  - "ARCH-001"
+  - "PROD-001"

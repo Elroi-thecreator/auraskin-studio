@@ -1,0 +1,18 @@
+id: ADR-001
+type: decision
+title: Architectural Decision: Server-Side Proxying with Fallback Presets for Hackathon Reliability
+domain: decision
+status: approved
+version: 1.0.0
+rule: "All external communications to the YouCam API (makeupar.com) shall execute server-side via Next.js API Routes, accompanied by a realistic mock simulation engine activated when API credentials are absent or exhausted."
+do:
+  - "Route task polling and file uploads through /api/youcam/analyze and /api/youcam/vto."
+  - "Inspect incoming request headers for optional user-provided 'x-youcam-api-key' override, falling back to process.env.YOUCAM_API_KEY."
+  - "Return simulated realistic JSON schemas when no key is configured or when the remote service is unavailable."
+dont:
+  - "Do not crash or render blank error screens if the external API returns 401 or 429."
+  - "Do not hardcode credentials in source code."
+reason: "Hackathon evaluators often review dozens of projects in short timeframes and may not register for separate third-party API keys. Providing both live key support and immediate high-fidelity demo execution guarantees 100% testability."
+related_items:
+  - "ARCH-001"
+  - "DEV-001"

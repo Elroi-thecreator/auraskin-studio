@@ -1,0 +1,19 @@
+id: ARCH-001
+type: architecture
+title: AuraSkin Studio System Architecture & Dual-Mode YouCam Integration
+domain: architecture
+status: approved
+version: 1.0.0
+rule: "All interactions with YouCam Skin AI and Look VTO APIs must route through server-side Next.js route handlers (/api/youcam/*) to keep API secrets secure. The system must support a dual-mode strategy: Live API Mode when YOUCAM_API_KEY is present, and an Instant Demo Fallback Mode with realistic telemetry for seamless judging."
+do:
+  - "Route all YouCam API calls (/s2s/v2.0/file, /s2s/v2.0/task/skin-analysis, /s2s/v2.0/task/look-vto) through backend route handlers."
+  - "Provide robust fallback presets with sample faces and realistic clinical metrics so judges can test every feature instantly without configuration."
+  - "Store user API key overrides in local storage with client-side header pass-through for interactive testing."
+dont:
+  - "Never expose YouCam API keys or secrets in client-side bundles."
+  - "Do not block user experience if the remote API encounters rate limits or errors; gracefully fall back to high-fidelity simulated diagnostics."
+reason: "Ensures security, rapid judge onboarding during Devpost evaluation, and complete resilience against external API network timeouts or quota exhaustion."
+related_items:
+  - "ARCH-002"
+  - "ADR-001"
+  - "DEV-001"

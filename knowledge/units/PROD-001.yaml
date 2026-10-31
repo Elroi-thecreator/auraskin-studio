@@ -1,0 +1,20 @@
+id: PROD-001
+type: product
+title: Clinical Skin Diagnostics & Personalized eCommerce VTO User Journey
+domain: product
+status: approved
+version: 1.0.0
+rule: "AuraSkin Studio must deliver a luxury, clinical-grade beauty commerce experience that empowers users to understand their skin biology, visualize immediate corrective glam via YouCam VTO, simulate long-term healing, and seamlessly purchase curated routines."
+do:
+  - "Provide 3 preloaded diverse test personas (different skin tones and concerns) so users can test with zero friction."
+  - "Support live webcam capture with face-alignment guides and local image file uploads."
+  - "Display 7 clinical concerns with severity indicators, biological skin age calculation, and toggleable visual heatmaps."
+  - "Provide 4 curated Look VTO styles with interactive split-slider comparison."
+  - "Include a 4-week skin barrier progression slider and 1-click add-to-bag routine builder."
+dont:
+  - "Do not present raw numerical diagnostics without plain-language dermatological explanations."
+  - "Do not force users to create an account or provide credit cards to test the application."
+reason: "Maximizes judging conversion and delight by removing all barrier-to-entry friction while demonstrating deep commercial product viability."
+related_items:
+  - "ARCH-002"
+  - "DEV-001"

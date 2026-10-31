@@ -1,0 +1,18 @@
+id: PROD-002
+type: product
+title: Predictive 4-Week Skin Progression & Active Ingredient Formulations
+domain: product
+status: approved
+version: 1.0.0
+rule: "The eCommerce conversion funnel must tie clinical diagnostics to a 4-week cellular skin barrier trajectory and bundled AM/PM product regimens with visible active ingredient concentrations."
+do:
+  - "Display chronological milestones (Week 1 barrier stabilization to Week 4 peak radiance) with score deltas."
+  - "Specify exact biochemical active ingredient mechanisms (e.g., Retinaldehyde 0.1%, Niacinamide 10%, CICA 65%)."
+  - "Provide 1-click 'Add All to Bag' with automated 18% bundle discount calculation."
+dont:
+  - "Do not present product recommendations disconnected from diagnosed concerns."
+  - "Do not obscure active ingredient concentrations or mechanisms of action."
+reason: "Elevates consumer confidence, reinforces clinical authority, and increases average order value (AOV) for eCommerce retail partners."
+related_items:
+  - "PROD-001"
+  - "ARCH-002"
